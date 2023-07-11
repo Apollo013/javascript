@@ -33,7 +33,7 @@ module.exports = {
      * @param {ListNode} list2
      * @return {ListNode}
      */
-    solution: (listNode1, listNode2) => {
+    run: (listNode1, listNode2) => {
         let mergedHead = new ListNode(-1, null),
             concurrent = mergedHead;
 

@@ -4,7 +4,7 @@
     "description": "Project for covering JavaScript Concepts & Algorithms",
     "main": "index.js",
     "scripts": {
-        "test-easy": "jest --verbose ./tests/algorithms/easy"
+        "test": "jest --verbose ./tests/algorithms"
     },
     "repository": {
         "type": "git",

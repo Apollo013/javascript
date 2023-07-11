@@ -1,5 +1,5 @@
 const ListNode = require("../../../models/ListNode");
-const mergeTwoSortedLists = require("../../../algorithms/easy/MergeTwoSortedLists");
+const solution = require("../../../algorithms/easy/MergeTwoSortedLists");
 
 describe("Testing Two Sum Algorithm", () => {
     it("should return [1,1,2,3,4,4]", () => {
@@ -15,21 +15,21 @@ describe("Testing Two Sum Algorithm", () => {
         listNode2B.next = listNode2C;
         listNode2A.next = listNode2B;
 
-        const nodeList = mergeTwoSortedLists.solution(listNode1A, listNode2A);
-        const result = mergeTwoSortedLists.getValuesToArray(nodeList);
+        const nodeList = solution.run(listNode1A, listNode2A);
+        const result = solution.getValuesToArray(nodeList);
         expect(result).toEqual([1, 1, 2, 3, 4, 4]);
     });
 
     it("should return []", () => {
-        const nodeList = mergeTwoSortedLists.solution(null, null);
-        const result = mergeTwoSortedLists.getValuesToArray(nodeList);
+        const nodeList = solution.run(null, null);
+        const result = solution.getValuesToArray(nodeList);
         expect(result).toEqual([]);
     });
 
     it("should return [0]", () => {
         let listNode2A = new ListNode(0, null);
-        const nodeList = mergeTwoSortedLists.solution(null, listNode2A);
-        const result = mergeTwoSortedLists.getValuesToArray(nodeList);
+        const nodeList = solution.run(null, listNode2A);
+        const result = solution.getValuesToArray(nodeList);
         expect(result).toEqual([0]);
     });
 });

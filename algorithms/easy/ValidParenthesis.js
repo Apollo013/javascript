@@ -25,7 +25,7 @@ module.exports = {
      * @param {string} s
      * @return {boolean}
      */
-    solution: (s) => {
+    run: (s) => {
         if (s === undefined || s === null || s.length === 0 || s.length % 2 > 0) return false;
 
         const openBrackects = "[{(";
