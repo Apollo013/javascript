@@ -1,7 +1,7 @@
 const ListNode = require("../../../models/ListNode");
 const solution = require("../../../algorithms/easy/MergeTwoSortedLists");
 
-describe("Testing Two Sum Algorithm", () => {
+describe("Testing Merge Two Sorted Lists Algorithm", () => {
     it("should return [1,1,2,3,4,4]", () => {
         let listNode1A = new ListNode(1, null);
         let listNode1B = new ListNode(2, null);

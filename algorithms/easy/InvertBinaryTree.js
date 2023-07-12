@@ -43,23 +43,6 @@ let obj = {
 
         return root;
     },
-
-    getValuesToArray: (root) => {
-        let current = root,
-            left = current.left,
-            right = current.right,
-            arr = [];
-        arr.push(current.val);
-
-        while (left && right) {
-            arr.push(left.val);
-            arr.push(right.val);
-            current.left = current.left.left;
-            current.right = current.right.right;
-        }
-
-        return arr;
-    },
 };
 
 module.exports = obj;

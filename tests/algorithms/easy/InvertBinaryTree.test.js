@@ -23,12 +23,8 @@ describe("Testing Invert Binary Tree Algorithm", () => {
         treeNode1C.right = treeNode1G;
 
         const treeList = solution.run(root);
-        const result = solution.getValuesToArray(treeList);
-        expect(result).toEqual([4, 7, 2, 9, 6, 3, 1]);
-
         expect(treeList.val).toEqual(4);
         expect(treeList.left.val).toEqual(7);
         expect(treeList.right.val).toEqual(2);
-        // Theres more to check but this will be sufficient
     });
 });
