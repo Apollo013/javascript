@@ -51,4 +51,16 @@ module.exports = {
 
         return maxProfit;
     },
+
+    run2: (prices) => {
+        let profit = 0,
+            min = prices[0];
+
+        for (let i = 0; i < process.length; i++) {
+            min = Math.min(min, prices[i]);
+            profit = Math.max(profit, prices[i] - min);
+        }
+
+        return profit;
+    },
 };
