@@ -92,7 +92,6 @@ console.log(memoizeAddMany([30, 50, 70, 90]));
 /* ---------------------------------------
  Recursion - fibonacci
 --------------------------------------- */
-/*
 const fib = (pos) => {
     if (pos < 2) return pos;
     return fib(pos - 1) + fib(pos - 2);
@@ -106,4 +105,3 @@ console.log(memoizeFib(40));
 console.log(fib(40));
 console.log(fib(40));
 console.log(fib(40));
-*/
