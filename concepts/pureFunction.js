@@ -35,3 +35,10 @@ const summed = oneToFive.reduce((acc, num) => acc + num);
 console.log(summed);
 
 console.log(oneToFive);
+
+const reverseSort = oneToFive.sort((prev, curr) => {
+    if (prev == curr) return 0;
+    if (prev > curr) return -1;
+});
+
+console.log(reverseSort);
