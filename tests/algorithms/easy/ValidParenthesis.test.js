@@ -1,6 +1,6 @@
 const solution = require("../../../algorithms/easy/ValidParenthesis");
 
-describe("Testing Two Sum Algorithm", () => {
+describe("Testing Valid Parenthesis", () => {
     it("should return true for ()", () => {
         const result = solution.run("()");
         expect(result).toEqual(true);
