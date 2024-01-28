@@ -15,7 +15,6 @@ function fixedSlidingWindow(arr, k) {
 
     maxValue = arr.slice(0, 3).reduce((prev, next) => prev + next, 0);
     currentMax = maxValue;
-    console.log(maxValue);
 
     for (let i = k; i < arr.length; i++) {
         currentMax += arr[i] - arr[i - k];
@@ -25,4 +24,6 @@ function fixedSlidingWindow(arr, k) {
     return maxValue;
 }
 
-console.log(fixedSlidingWindow([10, 20, 30, 40, 50, 60, 70], 3));
+module.exports = {
+    run: fixedSlidingWindow,
+};
