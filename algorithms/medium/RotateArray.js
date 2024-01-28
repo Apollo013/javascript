@@ -26,10 +26,6 @@ function solution1(nums, k) {
     }
 }
 
-function solution2(nums, k) {
-    nums = nums.join("").slice(-k).concat(nums.slice(0, k));
-}
-
 module.exports = {
     run: solution1,
     run2: solution2,

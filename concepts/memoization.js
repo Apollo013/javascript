@@ -1,5 +1,3 @@
-// Run with Quokka || node concepts/memoization.js
-
 /* ---------------------------------------
  Basic Example
 --------------------------------------- */
