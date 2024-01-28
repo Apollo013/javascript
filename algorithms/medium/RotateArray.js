@@ -28,5 +28,4 @@ function solution1(nums, k) {
 
 module.exports = {
     run: solution1,
-    run2: solution2,
 };
