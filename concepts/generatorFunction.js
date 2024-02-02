@@ -6,6 +6,7 @@ const getFunction = function* () {
 
 const generator = getFunction();
 const result = generator.next();
+
 console.log(result);
 console.log(generator.next());
 console.log(generator.next());

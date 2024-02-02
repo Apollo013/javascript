@@ -13,7 +13,7 @@ function fixedSlidingWindow(arr, k) {
     let maxValue = 0,
         currentMax = 0;
 
-    maxValue = arr.slice(0, 3).reduce((prev, next) => prev + next, 0);
+    maxValue = arr.slice(0, k).reduce((prev, next) => prev + next, 0);
     currentMax = maxValue;
 
     for (let i = k; i < arr.length; i++) {
