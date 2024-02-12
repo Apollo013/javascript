@@ -20,3 +20,35 @@ function getMinLength(seq) {
 
     return result.length;
 }
+
+function getMinLength1(seq) {
+    if (!seq) {
+        return 0;
+    }
+
+    if (seq.length < 2) {
+        return seq.length;
+    }
+
+    let idx = seq.indexOf("AB");
+    if (idx > -1) {
+        return getMinLength1(seq.slice(0, idx) + seq.slice(idx + 2));
+    } else {
+        idx = seq.indexOf("BB");
+        if (idx > -1) {
+            return getMinLength1(seq.slice(0, idx) + seq.slice(idx + 2));
+        } else {
+            return seq.length;
+        }
+    }
+}
+
+//console.log(getMinLength("BAAABAB"));
+console.log(getMinLength1("BAAABAB"));
+console.log(getMinLength1("BBABAA"));
+console.log(getMinLength1("ABABAB"));
+console.log(
+    getMinLength1(
+        "ABABABABAAAAAAAAAAAAAAAAAAAAAABABABABBBBBBABABABABABABABABBABABABABBBABABABABBAAABABBBABAAABABABABABABABAAAAAAAAAAAAAAAAAAAAAABABABABBBBBBABABABABABABABABBABABABABBBABABABABBAAABABBBABAAABABABABABABABAAAAAAAAAAAAAAAAAAAAAABABABABBBBBBABABABABABABABABBABABABABBBABABABABBAAABABBBABAAABABABABABABABAAAAAAAAAAAAAAAAAAAAAABABABABBBBBBABABABABABABABABBABABABABBBABABABABBAAABABBBABAAABABAB"
+    )
+);
