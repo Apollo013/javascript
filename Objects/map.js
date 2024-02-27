@@ -11,6 +11,9 @@ map.set("address", {
     zip: "02101",
 });
 
+map.set(true, "bool1");
+map.set(1, "num1");
+
 console.log(map);
 console.log(map.size);
 console.log(map.get("name"));
